@@ -1,7 +1,7 @@
 ---
 title: Resources
 prev: contributing
-current:resources
+current: resources
 next: 
 ---
 
