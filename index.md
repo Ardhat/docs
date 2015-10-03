@@ -1,7 +1,8 @@
 ---
 title: Welcome
+prev: 
+current: index
 next: quickstart
-
 ---
 
 

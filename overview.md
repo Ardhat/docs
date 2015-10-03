@@ -1,10 +1,11 @@
 ---
 category: Getting Started
 title: Overview
-prev: /doc/usage
-next: /doc/structure
 weight: 30
 toc: true
+prev: quickstart
+current: overview
+next: configuration
 ---
 
  ![image alt text](/media/ardhatbottom400.jpg)
