@@ -1,5 +1,8 @@
 ---
 title: Expansion
+prev: battery
+current: expansion
+next: installation
 ---
 
 ### Arduino Compatibility

@@ -1,9 +1,10 @@
 ---
 title: Power
-prev: /doc/
-next: /doc/installation
 weight: 30
 toc: true
+prev: configuration
+current: power
+next: leds
 ---
 
 

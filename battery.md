@@ -1,11 +1,11 @@
 ---
 title: Battery Operation
-
+prev: io
+current: battery
+next: expansion
 ---
 
-***
-
- ![image alt text](/media/ardhatbattside600.jpg)
+ ![image alt text](/media/ardhatbattside400.jpg)
 
 
  {{<ardhat>}} can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the [store](/shop)

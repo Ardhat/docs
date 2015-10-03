@@ -1,9 +1,10 @@
 ---
 title: Quick Start
-prev: /doc/
-next: /doc/installation
 weight: 30
 toc: true
+prev: 
+current: quickstart
+next: overview
 ---
 
 

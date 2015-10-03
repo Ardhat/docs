@@ -1,6 +1,8 @@
 ---
 title: Sleep Management
-permalink: /docs/windows/
+prev: upgrading
+current: sleep
+next: github
 ---
 
 ## Power/Sleep Management

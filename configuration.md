@@ -1,7 +1,9 @@
 ---
 category: Getting Started
 title: Configuration
-permalink: /doc/configuration/
+prev: overview
+current: configuration
+next: power
 ---
 
 

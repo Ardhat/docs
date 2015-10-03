@@ -1,6 +1,8 @@
 ---
 title: LEDs
-
+prev: power
+current: leds
+next: io
 ---
 
 {{<ardhat>}} supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.

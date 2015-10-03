@@ -1,6 +1,8 @@
 ---
 title: Environment Sensor
-
+prev: imu
+current: env
+next: radio
 ---
 
 Environmental sensing is performed by a Bosch BME280 integrated sensor

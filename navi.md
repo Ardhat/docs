@@ -1,5 +1,9 @@
 ---
 title: Navigation Switch
+title: GitHub
+prev: github
+current: navi
+next: rtc
 ---
 
 The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.

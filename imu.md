@@ -1,6 +1,8 @@
 ---
 title: IMU
-permalink: /docs/plugins/
+prev: rtc
+current: imu
+next: env
 ---
 
 ### (Inertial Measurement Unit)  

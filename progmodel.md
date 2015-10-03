@@ -1,6 +1,8 @@
 ---
 title: Programming model
-
+prev: installation
+current: progmodel
+next: upgrading
 ---
 
 Ardhat employs a future-proof programming environment ready for large distributed node networks.

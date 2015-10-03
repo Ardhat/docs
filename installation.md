@@ -1,9 +1,10 @@
 ---
 title: Installation
-prev: /doc/quickstart
-next: /doc/configuration
 weight: 30
 toc: true
+prev: expansion
+current: installation
+next: progmodel
 ---
 
 

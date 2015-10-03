@@ -1,6 +1,8 @@
 ---
 title: Upgrading
-permalink: /docs/upgrading/
+prev: progmodel
+current: upgrading
+next: sleep
 ---
 
 Before using Ardhat, make sure you have upgraded to the latest supported version.

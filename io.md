@@ -1,5 +1,8 @@
 ---
 title: I/O usage
+prev: leds
+current: io
+next: battery
 ---
 
 
