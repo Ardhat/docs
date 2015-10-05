@@ -1,6 +1,5 @@
 ---
 title: Navigation Switch
-title: GitHub
 prev: github
 current: navi
 next: rtc
