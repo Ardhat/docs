@@ -12,7 +12,7 @@ next: battery
 **GPIO 3** | I2C-SCL –  I2C bus for communication with RTC, IMU and Arduino
 **GPIO 14** | Serial RXD – used for programming the Arduino with GPIO 13
 **GPIO 15** | Serial TXD – used for programming the Arduino with GPIO 13
-**GPIO 13** | Arduino ‘Reset’ line – used for programming with serial port
+**GPIO 22** | Arduino ‘Reset’ line – used for programming with serial port
 
 
 
