@@ -17,7 +17,7 @@ published: true
 
 {{<ardhat>}} includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings. 
 
-{{<ardhat>}} is available with 2 radio transceiver options. The first is compatible with the Jeelabs, Moteino and [EmonCMS](http://emoncms.org/) nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW. 
+{{<ardhat>}} is available with 2 radio transceiver options. The first is compatible with the [Jeelabs](http://jeelabs.org/), [Moteino](http://lowpowerlab.com/moteino/) and [EmonCMS](http://emoncms.org/) nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW. 
 
 The second uses the [LoRaTM](https://www.lora-alliance.org/) RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This version of Ardhat uses the HopeRF RFM95/96W.
 
@@ -32,7 +32,7 @@ The recommended library is the the Radiohead library from Airspayce, as this sup
 
 Great documentation on the library is available [here] (http://www.airspayce.com/mikem/arduino/RadioHead/index.html)
 
-You'll need 2 radios of course, preferably 2 {{<ardhat>}}s :), but you can also use [Jeelink](http://www.digitalsmarties.net/products/jeelink),  [Moteino] (http://lowpowerlab.com/moteino/) or [Teensy] (https://oshpark.com/shared_projects/RIumMBtN) nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:
+You'll need 2 radios of course, preferably 2 {{<ardhat>}}s :), but you can also use [Jeelink](http://www.digitalsmarties.net/products/jeelink),  [Moteino] (https://lowpowerlab.com/shop/moteino-r4) or [Teensy] (https://oshpark.com/shared_projects/RIumMBtN) nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:
 
 **433MHz:**
 
