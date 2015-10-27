@@ -8,10 +8,9 @@ published: true
 
 
 
+
  ![image alt text](/media/ardhatradio400.jpg)
 
-
-### Long-range wireless node
 
 ### Long-range wireless node
 
