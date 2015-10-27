@@ -3,7 +3,9 @@ title: I/O usage
 prev: leds
 current: io
 next: battery
+published: true
 ---
+
 
 
  **Raspberry Pi GPIO** | 
@@ -21,8 +23,8 @@ next: battery
 --- | ---
 **D0** | serial data from Raspberry Pi
 **D1** | serial data to Raspberry Pi
-**D3*** | Radio node  Interrupt
-**D8*** | Radio node SPI SS
+**D3*** | Radio and peripheral Interrupt
+**D10*** | Radio node SPI SS
 **D11*** | Radio node SPI MOSI
 **D12*** | Radio node SPI MISO
 **D13*** | Radio node SPI SCK
