@@ -2,10 +2,20 @@
 title: Resources
 prev: contributing
 current: resources
-next: 
+next: null
+published: true
 ---
 
+
 Ardhat’s growing use is producing a wide variety of tutorials, frameworks, extensions, examples, and other resources that can be very helpful. Below is a collection of links to some of the most popular Ardhat resources.
+
+### Platformio
+
+PlatformIO is a cross-platform code builder and  library manager, great for using Ardhat from the command line, for example with a headless Raspberry Pi.
+
+{{<ardhat>}}'s directly [supported](http://docs.platformio.org/en/latest/platforms/atmelavr.html), so head over to [PlatformIO](http://platformio.org/#!/) and get started!
+
+
 
 ### Ardhat tips & tricks, and examples
 
