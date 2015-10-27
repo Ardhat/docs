@@ -7,7 +7,7 @@ published: true
 ---
 
 
-{{<ardhat>}} has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the {{<ardhat>}} environment as detaild below:  
+{{<ardhat>}} has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the {{<ardhat>}} environment as detailed below:  
 
  **Raspberry Pi GPIO** | Usage
 --- | ---
@@ -40,7 +40,7 @@ published: true
 **Vin** | Connected to the 2.1mm DC Jack through polarity protection
 **5V** | Supplied either from the Ext-> 5V Buck converter, or the LiPo->5V Boost converter or the Raspberry Pi MicroUSB 5V supply
 **3.3V** | Supplied through a 300mA linear regulator on Ardhat (NB if fitted, the radio module may consume 150mA peak during transmission bursts)
-**SPARE** | The unused shield pin next to IOREF is the 5V level shifted O/P from the GPIO18 (PiPWM) (see above)
+**SPARE** | The unused shield pin next to IOREF is the 5V level shifted O/P from GPIO18 (PiPWM) (see above)
 
 
 *The above marked pins are available for use if the radio module is not fitted.
