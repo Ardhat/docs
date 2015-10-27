@@ -7,7 +7,7 @@ published: true
 ---
 
 
-The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor
+The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides 
 
 * humidity sensor
 * barometric pressure sensor
@@ -20,4 +20,4 @@ From the Bosch [website](http://www.bosch-sensortec.com/de/homepage/products_3/e
 
  The BMP180/280 is compatible with the popular [RTIMUlib](https://github.com/richards-tech/RTIMULib-Arduino)
  
- Note that the Ardhat-I uses a BMP280 which has an altimeter and thermometer, but no humidity sensor.
+
