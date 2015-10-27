@@ -22,7 +22,7 @@ As shipped, {{<ardhat>}} does not come with headers pre installed, which gives y
 
 #### Radio antenna
 
-If you have a radio equipped {{<ardhat>}}, you'll need to attach an antenna to the board. The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled with little effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and {{<ardhat>}} is supplied with a 1/4 wave antenna of appropriate length. For reference, the required antenna lengths are:
+If you have a radio equipped {{<ardhat>}}, you'll need to attach an antenna to the board. The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled but with a small effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and {{<ardhat>}} is supplied with a 1/4 wave antenna of appropriate length. For reference, the required antenna lengths are:
 
 **433MHz:**
 
