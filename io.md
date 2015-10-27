@@ -7,6 +7,7 @@ published: true
 ---
 
 
+
 {{<ardhat>}} has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the {{<ardhat>}} environment as detailed below:  
 
  **Raspberry Pi GPIO** | Usage
@@ -33,8 +34,8 @@ published: true
 **D12*** | Radio node SPI MISO
 **D13*** | Radio node SPI SCK
 **A3** | PowerOn/Off  to Raspberry Pi
-**A4** | I2C SDA to Raspberry Pi
-**A5** | I2C SCL to Raspberry Pi
+**A4** | I2C SDA to Raspberry Pi and Peripherals
+**A5** | I2C SCL to Raspberry Pi and Peripherals
 **A6** | External supply voltage monitor
 **A7** | Power/Nav Switch and LiPo  voltage  monitor
 **Vin** | Connected to the 2.1mm DC Jack through polarity protection
@@ -49,6 +50,4 @@ published: true
 --- | ---
 **ICSP Header** | Standard Arduino programming header can be used e.g. for burning new bootloader
 **Solar** | 0.1" header next to ICSP can be connected to a 6V solar panel to charge the LiPo cell while Raspberry Pi is turned off and Ardhat is on sleep mode
-**RTC Clock Out** | PCF8643 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26
-
-
+**RTC Clock Out** | PCF8653 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26
