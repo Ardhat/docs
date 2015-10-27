@@ -8,7 +8,7 @@ current: overview
 next: configuration
 ---
 
- ![image alt text](/media/ardhatbottom400.jpg)
+ ![image alt text](/media/ardhat_bottom.jpg)
 
 On a single Raspberry Pi standard [HAT](https://github.com/raspberrypi/hats),  {{<ardhat>}} integrates not only an [Arduino Uno ](http://arduino.cc/en/Main/arduinoBoardUno)compatible real-time hardware subsystem,  but also a complete power management solution, a full suite of environmental sensors, and an optional long-range wireless mesh network node.
 

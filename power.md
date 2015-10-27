@@ -16,11 +16,10 @@ The wide input voltage range mean that just about any laptop power supply that p
 Adapters are available to connect to bare wires,for example to use in cars and R<img align="right" style="width:200px;height:200px" src="/media/005AX.jpg">Vs.
 
 
-
 This input is protected against polarity reversals and over-current and will accept any voltage from 8-28V. The polarity protected voltage from this connector is presented to the Arduino shield header for use by shields. {{<ardhat>}} integrates a 5v@ 3A switching regulator driven by this external supply , for use by peripherals, such as small servo motors or ESCs. Note that the maximum current drawn by shields from the 5V rail must be less than 2.5A.  
 
 
-Power to the Raspberry Pi is switched by setting Ardhat port A3 high, which drives a power MOSFET to turn off 5V power from the Ardhat to Raspberry Pi
+5V power to the Raspberry Pi is switched off by setting {{<ardhat>}} pin A3 high, which drives a power MOSFET to turn off 5V power to Raspberry Pi, or compatible.
 
 <div class="note">
   <p>Note that the Raspberry Pi will not turn off if it is connected to USB power on its micro-USB connector.
