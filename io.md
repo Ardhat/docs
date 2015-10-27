@@ -7,11 +7,12 @@ published: true
 ---
 
 
+{{<ardhat>}} has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the {{<ardhat>}} environment as detaild below:  
 
  **Raspberry Pi GPIO** | Usage
 --- | ---
-**GPIO 2** | I2C-SDA –  I2C bus for communication with RTC, IMU and Arduino
-**GPIO 3** | I2C-SCL –  I2C bus for communication with RTC, IMU and Arduino
+**GPIO 2** | I2C-SDA –  I2C bus for communication with RTC, IMU, ENV and Arduino
+**GPIO 3** | I2C-SCL –  I2C bus for communication with RTC, IMU, ENV and Arduino
 **GPIO 14** | Serial RXD – used for programming the Arduino with GPIO 13
 **GPIO 15** | Serial TXD – used for programming the Arduino with GPIO 13
 **GPIO 18** | PiPWM – connected to a 3V-5V level shifter to drive e.g. WS2811 LED strips (see **SPARE** below)
@@ -37,9 +38,17 @@ published: true
 **A6** | External supply voltage monitor
 **A7** | Power/Nav Switch and LiPo  voltage  monitor
 **Vin** | Connected to the 2.1mm DC Jack through polarity protection
-**5V** | Supplied either from the DC buck converter, or the LiPo->5V Boost converter or the Raspberry Pi Micros USB 5V
+**5V** | Supplied either from the Ext-> 5V Buck converter, or the LiPo->5V Boost converter or the Raspberry Pi MicroUSB 5V supply
 **3.3V** | Supplied through a 300mA linear regulator on Ardhat (NB if fitted, the radio module may consume 150mA peak during transmission bursts)
 **SPARE** | The unused shield pin next to IOREF is the 5V level shifted O/P from the GPIO18 (PiPWM) (see above)
 
 
-*These pins are available for use if the radio module is not fitted.
+*The above marked pins are available for use if the radio module is not fitted.
+
+**Additional** | Usage
+--- | ---
+**ICSP Header** | Standard Arduino programming header can be used e.g. for burning new bootloader
+**Solar** | 0.1" header next to ICSP can be connected to a 6V solar panel to charge the LiPo cell while Raspberry Pi is turned off and Ardhat is on sleep mode
+**RTC Clock Out** | PCF8643 RTC can be prgrammed to generate a Clock O/P on the test point next to Pi GPIO26
+
+
