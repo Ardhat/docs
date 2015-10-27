@@ -18,20 +18,26 @@ published: true
 
 {{<ardhat>}} is available with 2 radio transceiver options. The first is compatible with the [Jeelabs](http://jeelabs.org/), [Moteino](http://lowpowerlab.com/moteino/) and [EmonCMS](http://emoncms.org/) nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW. 
 
-The second uses the [LoRaTM](https://www.lora-alliance.org/) RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This version of Ardhat uses the HopeRF RFM95/96W.
+The second uses the [LoRaTM](https://www.lora-alliance.org/) RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This option uses the HopeRF RFM95/96W.
 
 With both options, the radio nodes are driven by the Arduino processor, so they can be maintained at very lower power, only waking up the Raspberry Pi when required.
 
-The recommended library is the the Radiohead library from Airspayce, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports several different types of radio network configuration:
+The recommended library is the the Radiohead library from [Airspayce](http://www.airspayce.com/), as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports several different types of radio network configuration:
 
 - **RHDatagram Addressed**, unreliable variable length messages, with optional broadcast facilities.
 - **RHReliableDatagram Addressed**, reliable, retransmitted, acknowledged variable length messages.
 - **RHRouter Multi-hop** delivery from source node to destination node via 0 or more intermediate nodes, with manual routing.
-- **RHMesh Multi-hop** delivery with automatic route discovery and rediscovery.
+- **RHMesh Multi-hop**, delivery with automatic route discovery and rediscovery.
 
 Great documentation on the library is available [here] (http://www.airspayce.com/mikem/arduino/RadioHead/index.html)
 
-You'll need 2 radios of course, preferably 2 {{<ardhat>}}s :), but you can also use [Jeelink](http://www.digitalsmarties.net/products/jeelink),  [Moteino] (https://lowpowerlab.com/shop/moteino-r4) or [Teensy] (https://oshpark.com/shared_projects/RIumMBtN) nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:
+You'll need at least 2 radios of course, preferably {{<ardhat>}}s :), but you can also use [Jeelink](http://www.digitalsmarties.net/products/jeelink),  [Moteino] (https://lowpowerlab.com/shop/moteino-r4) or [Teensy] (https://oshpark.com/shared_projects/RIumMBtN) nodes.  Prepare the Ardhat board by [attaching an antenna to the board](https://ubiqio.com/doc/configuration/).
+
+<div class="note warning">
+  <p>Do not load the driver without an antenna attached, as running the transmitter without an approriate load could cause permanent damage to the radio module</p>
+</div>
+
+(The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:
 
 **433MHz:**
 
@@ -59,12 +65,13 @@ There are a large number of examples provided with the library, but the _RF69cli
 In both cases, you'll need to make sure you've set the frequency correctly, depending on the {{<ardhat>}} radio module you have. Do this on the line
 
 ~~~c
-if (!rf69.setFrequency(868.95)) 
+if (!rf69.setFrequency(868)) 
 ~~~
 
 Also, double check you have set the right SPI SS and Interrupt lines. In the case of Ardhat, SS is on pin D10, and the interrupt is on D3, so this means the RF69 constructor should look like
 
 ~~~c
+// Singleton instance of the radio driver
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 ~~~
 
