@@ -20,4 +20,4 @@ From the Bosch [website](http://www.bosch-sensortec.com/de/homepage/products_3/e
 
  The BMP180/280 is compatible with the popular [RTIMUlib](https://github.com/richards-tech/RTIMULib-Arduino)
  
- Note that the Ardhat-I uses a BMP180 which has an altimeter and thermometer, but no humidity sensor.
+ Note that the Ardhat-I uses a BMP280 which has an altimeter and thermometer, but no humidity sensor.
