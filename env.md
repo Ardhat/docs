@@ -7,7 +7,7 @@ published: true
 ---
 
 
-The Ardhat-E provides Environmental Sensing in addition to the basic functions of Ardiuno compatitibility and power management. This is performed by a Bosch BME280 integrated sensor
+The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatitibility and power management. This is performed by a Bosch BME280 integrated sensor
 
 * humidity sensor
 * barometric pressure sensor
