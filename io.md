@@ -49,6 +49,6 @@ published: true
 --- | ---
 **ICSP Header** | Standard Arduino programming header can be used e.g. for burning new bootloader
 **Solar** | 0.1" header next to ICSP can be connected to a 6V solar panel to charge the LiPo cell while Raspberry Pi is turned off and Ardhat is on sleep mode
-**RTC Clock Out** | PCF8643 RTC can be prgrammed to generate a Clock O/P on the test point next to Pi GPIO26
+**RTC Clock Out** | PCF8643 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26
 
 
