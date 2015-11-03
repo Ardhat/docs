@@ -5,9 +5,13 @@ current: progmodel
 next: upgrading
 ---
 
-Ardhat employs a future-proof programming environment ready for large distributed node networks.
+{{<ardhat>}}'s features can be accessed from a compatible host, such as Raspberry Pi, using the [Firmata](https://github.com/firmata/protocol) protocol over serial.
 
-In principle, an application can be written in any language that can access the Raspberry Pi hardware (e.g. GPIOs, I2C, network etc). However, in an IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond. 
+Firmata provides a standardized mechanism to exchange information between a real-time processor such as {{<ardhat>}} and a host, but is extensible to access  wide range of features.
+
+As an example, the factory [image](https://github.com/Ardhat/ArdhatFirmata) that ships with {{<ardhat>}} contains a modified version of standard [Arduino Firmata](https://www.arduino.cc/en/Reference/Firmata) that adds sevral additional featires, such as monitoring of the Navigation switch and Status LED control, using the Arduino [SMlib](http://playground.arduino.cc/Code/SMlib). This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.
+
+In principle, an {{<ardhat>}} host application can be written in any language that has a Firmata library, including Processing, Python, C++ and [many more](http://firmata.org/wiki/Download). However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond. 
 
 JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as [node.js](http://nodejs.org/), make it the natural choice for a web enabled system such as Ardhat.  
 
