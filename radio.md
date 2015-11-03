@@ -34,7 +34,7 @@ Great documentation on the library is available [here] (http://www.airspayce.com
 You'll need at least 2 radios of course, preferably {{<ardhat>}}s :), but you can also use [Jeelink](http://www.digitalsmarties.net/products/jeelink),  [Moteino] (https://lowpowerlab.com/shop/moteino-r4) or [Teensy] (https://oshpark.com/shared_projects/RIumMBtN) nodes.  Prepare the Ardhat board by [attaching an antenna to the board](https://ubiqio.com/doc/configuration/).
 
 <div class="note warning">
-  <p>Do not load the driver without an antenna attached, as running the transmitter without an approriate load could cause permanent damage to the radio module</p>
+  <p>Do not load the driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module</p>
 </div>
 
 (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:
