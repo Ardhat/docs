@@ -7,17 +7,16 @@ current: quickstart
 next: overview
 ---
 
-Before connecting {{<ardhat>}} to a host system such as Raspberry Pi, be sure to checkout the hardware setup instructions [here](/doc/configuration).
+Before connecting  to a host system such as Raspberry Pi, be sure to checkout the hardware setup instructions [here](/doc/configuration).
 
 Once connected, you can power up the Ardhat, either from battery or using the DC barrel Jack on board, and the orange status LED will pulse.
 
 To turn the Pi or compatible on, push the navigation switch, and the status LED will stay permanently illuminated.
 
-At this point, Ardhat is ready to communicate over the Firmata channel [more info](doc/progmodel/)
+At this point, Ardhat is ready to communicate over the [Firmata channel](doc/progmodel/), which requires some installation on the host, which is detailed [here](/doc/installation).
 
-For the impatient, here's how to get the Arduino IDE up and running with Ardhat. More detailed instructions [here](/doc/installation).
+If you just want to program {{<ardhat>}} directly from Raspberry Pi, here's how to get the Arduino IDE up and running with Ardhat.
 
-   
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">
