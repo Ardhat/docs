@@ -7,18 +7,21 @@ next: power
 published: true
 ---
 
+#### Protecting shield pins
+
+<div class="note warning">
+  <p>Before fitting {{<ardhat>}} to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connect to prevent short-circuits on the shield connector which may cause damage to {{<ardhat>}}</p>
+</div>
 
 
+#### Arduino shield headers
 
-{{<ardhat>}} has several configuration options detailed here.
+Some versions of {{<ardhat>}} do not come with headers pre installed, which gives you the option of running as a pure lightweight HAT, or as an Arduino compatible module. If you want to populate the supplied Arduino headers, a good trick to make sure you get them straight is to fit a shield to the headers _before_ soldering. Use a fine tipped iron and fine core solder (1mm).
+
 
 #### Writing to HAT eeprom
 
 By default {{<ardhat>}} this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.
-
-#### Arduino shield headers
-
-As shipped, {{<ardhat>}} does not come with headers pre installed, which gives you the option of running as a pure lightweight HAT, or as an Arduino compatible module. If you want to populate the supplied Arduino headers, a good trick to make sure you get them straight is to fit a shield to the headers _before_ soldering. Use a fine tipped iron and fine core solder (1mm).
 
 
 #### Radio antenna
