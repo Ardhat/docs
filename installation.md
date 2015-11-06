@@ -33,12 +33,12 @@ By default, Raspberry Pi copies its shell and kernel messages to the serial port
   </div>
 </section>
 
-From the menu, select _Advanced Options_
+From the menu, select `Advanced Options`
 
 ![image alt text](/media/raspi-config.png)
 
 
-Then select serial
+Then select `Serial`
 
 ![image alt text](/media/raspi-config-serial.png)
 
@@ -46,7 +46,7 @@ and disable shell and kernel messages on serial
 
 ![image alt text](/media/raspi-config-serial-no.png)
 
-Back at the Advanced Option menu you'll also want to enable I2C, so that you can access the {{<ardhat>}} peripherals directly if required
+Back at the `Advanced Options` menu you'll also want to enable I2C, so that you can access the {{<ardhat>}} peripherals directly if required
 
 ![image alt text](/media/raspi-config-I2C.png)
 
@@ -139,7 +139,7 @@ In order that the Arduino IDE works properly with {{<ardhat>}}, it needs perform
   </div>
 </section>
 
-Start the Arduino IDE
+Start the Arduino IDE...
   
 
 
@@ -147,4 +147,4 @@ Start the Arduino IDE
 ![image alt text](/media/ArdhatIDE.jpg)
 
 
-And you're all set!!
+...and you're all set!!

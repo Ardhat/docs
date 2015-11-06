@@ -13,9 +13,9 @@ next: configuration
 On a single Raspberry Pi standard [HAT](https://github.com/raspberrypi/hats),  {{<ardhat>}} integrates not only an [Arduino Uno ](http://arduino.cc/en/Main/arduinoBoardUno)compatible real-time hardware subsystem,  but also a complete power management solution, a full suite of environmental sensors, and an optional long-range wireless mesh network node.
 
 
-Ardhat supports an open,  state-of-the-art software framework that securely and flexibly allows Sensors and Actuators to communicate both amongst themselves, and with other  Sensor Network devices and products, on or off the Internet.
+{{<ardhat>}} supports an open,  state-of-the-art software framework that securely and flexibly allows Sensors and Actuators to communicate both amongst themselves, and with other  Sensor Network devices and products, on or off the Internet.
 
-Compatible with all current Raspberry Pi models, Ardhat adds the environmental  protection and awareness, real-time performance, and  low-power operation that a real world system needs.
+Compatible with all current Raspberry Pi models, {{<ardhat>}} adds the environmental  protection and awareness, real-time performance, and  low-power operation that a real world system needs.
 
 ### {{<ardhat>}} -Features
 
@@ -40,7 +40,7 @@ Smart LED (e.g. NeoPixel) Output | *Provides 5V GPIO from RPi for ‘ZeroCPU’ 
 ‘BatteryOnTop’ design | *Flat upper surface for compact, secure battery storage*
 Comprehensive Charge Monitoring | *As well as visual feedback, RPi can read both external and battery  voltages over I2C*
 Programmable Wake-up and Watchdog power management | *Raspberry Pi can be woken at predetermined times; watchdog function increases system robustness*
-Inter-processor communication over Hi-Speed 400kHz I2C bus | *Rapid and efficient communication between Raspberry Pi and Ardhat* 
+Inter-processor communication over Serial and Hi-Speed 400kHz I2C bus | *Rapid and efficient communication between Raspberry Pi and Ardhat* 
 On board peripherals are accessible by both Arduino and Raspberry Pi | *When Raspberry Pi is in halt mode, Ardhat can check peripherals and wake up Raspberry Pi  e.g. RTC, IMU*
 Raspberry Pi Hat standard compliant design | *Fully compliant, with  ID EEPROM ,40 pin header compatible with Raspberry Pi model A+ , B+ and B V2*
 
