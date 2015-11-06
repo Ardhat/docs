@@ -3,14 +3,14 @@ category: Getting Started
 title: Configuration
 prev: overview
 current: configuration
-next: power
+next: quickstart
 published: true
 ---
 
 #### Protecting shield pins
 
 <div class="note warning">
-  <p>Before fitting {{<ardhat>}} to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connect to prevent short-circuits on the shield connector which may cause damage to {{<ardhat>}}</p>
+  <p>Before fitting {{<ardhat>}} to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connector to prevent short-circuits on the shield connector which may cause damage to {{<ardhat>}}</p>
 </div>
 
 

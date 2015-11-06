@@ -2,9 +2,9 @@
 title: Quick Start
 weight: 30
 toc: true
-prev: 
+prev: configuration
 current: quickstart
-next: overview
+next: power
 ---
 
 Before connecting  to a host system such as Raspberry Pi, be sure to checkout the hardware setup instructions [here](/doc/configuration).
@@ -15,7 +15,7 @@ To turn the Pi or compatible on, push the navigation switch, and the status LED 
 
 At this point, {{<ardhat>}} is ready to communicate over the Firmata channel. For more info on which host apps to use, see [here](/doc/progmodel).  
 
-If you just want to program {{<ardhat>}} directly from Raspberry Pi, there are full instructions [here](/doc/installation), but for the impatient, here's the quick way to get the Arduino IDE up and running with {{<ardhat>}}.
+If you want to program {{<ardhat>}} directly from Raspberry Pi, there are full instructions [here](/doc/installation), but for the impatient, here's the quick way to get the Arduino IDE up and running with {{<ardhat>}}.
 
 <section class="quickstart" >
   <div class="grid">

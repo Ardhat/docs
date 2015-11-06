@@ -37,30 +37,11 @@ You'll need at least 2 radios of course, preferably {{<ardhat>}}s :), but you ca
   <p>Do not load the driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module</p>
 </div>
 
-(The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:
-
-**433MHz:**
-
-- 1/4 wave = 164.7mm
-- 1/2 wave = 329.4mm
-- full wave = 692.7mm
-
-**868MHz:**
-
-- 1/4 wave = 82.2mm
-- 1/2 wave = 164.3mm
-- full wave = 345.5mm
-
-**915MHz:**
-
-- 1/4 wave = 77.9mm
-- 1/2 wave = 155.9mm
-- full wave = 327.8mm
 
 
 Then install the Radiohead [library](https://github.com/Ardhat/Radiohead) into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both [Radiohead](http://platformio.org/#!/lib/search?query=radiohead) and [{{<ardhat>}}](http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards) .
 
-There are a large number of examples provided with the library, but the _RF69client_ and _RF69server_ sketches are a great starting point.
+There are a large number of examples provided with the library, but the `RF69_client` and `RF69_server` sketches are a great starting point.
 
 In both cases, you'll need to make sure you've set the frequency correctly, depending on the {{<ardhat>}} radio module you have. Do this on the line
 
@@ -75,6 +56,6 @@ Also, double check you have set the right SPI SS and Interrupt lines. In the cas
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 ~~~
 
-Then load up the _RF69server.pde_ sketch on the 'gateway' {{<ardhat>}}, and the _RF69server.pde_ sketch on the 'node'. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.
+Then load up the `RF69_server.pde` sketch on the 'gateway' {{<ardhat>}}, and the `RF69_server.pde` sketch on the 'node'. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.
 
 Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.

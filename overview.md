@@ -3,7 +3,7 @@ category: Getting Started
 title: Overview
 weight: 30
 toc: true
-prev: quickstart
+prev: 
 current: overview
 next: configuration
 ---
