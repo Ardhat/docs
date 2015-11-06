@@ -8,11 +8,13 @@ next: progmodel
 ---
 
 
-Getting Ardhat installed and ready-to-go should only take a few minutes.
+Getting {{<ardhat>}} installed and ready-to-go should only take a few minutes.
 
-The Optiboot bootloader is already installed on {{<ardhat>}}'s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.
+The [Optiboot](/doc/upgrading) bootloader is already installed on {{<ardhat>}}'s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.  
 
-By default, Raspberry Pi connects it's console ouput to the serial port. As we use this channel to communicate we need to disable it. This is most easily doen with the in-built utility raspi-config.
+The easiest way to do this is from the command line, and the best way to do that, is to ssh into the Raspberry Pi so that you can copy and paste the commands below into your terminal (you can use [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) if you are not on a Unix based system like Linux or OS X).
+
+By default, Raspberry Pi copies its shell and kernel messages to the serial port. As {{<ardhat>}} uses this channel to communicate with the host, we need to disable that. This is most easily done with the in-built utility [raspi-config](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
 
 
 <section class="quickstart" >
@@ -44,12 +46,12 @@ and disable shell and kernel messages on serial
 
 ![image alt text](/media/raspi-config-serial-no.png)
 
-Back at the Advanced Option menu you'll also want to enable I2C, so that you can access the Ardhat peripeherals directly if required
+Back at the Advanced Option menu you'll also want to enable I2C, so that you can access the {{<ardhat>}} peripherals directly if required
 
 ![image alt text](/media/raspi-config-I2C.png)
 
 
-Now we need to load a few software pre-requisites, which are best installed from the command line, and the best way to do that is to ssh into the Raspberry Pi Linux instance, so that you can copy and paste the commands below into your terminal
+Now we need to load a few software pre-requisites...
 
 First make sure you have up-to-date packages installed
 
@@ -97,7 +99,8 @@ Then install some essential packages, including a modified version of avrdude.
   </div>
 </section>
 
-In order that the Arduino IDE works properly with Ardhat, it needs to Reset Ardhat during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:
+In order that the Arduino IDE works properly with {{<ardhat>}}, it needs perform a reset during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:  
+
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">

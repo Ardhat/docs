@@ -13,7 +13,7 @@ If using Ardhat on a Raspberry Pi, see [this guide](https://www.raspberrypi.org/
 
 ## Updating the bootloader
 
-The bootloader used in {{<ardhat>}} is a modified verion of Optiboot, and is loaded at the factory together with a default Sketch that runs Firmata and also manages the Navigation switch and LED.
+The bootloader used in {{<ardhat>}} is a modified version of Optiboot, and is loaded at the factory together with a default [Sketch](https://github.com/Ardhat/ArdhatFirmata)  that runs [Firmata](https://github.com/firmata/protocol) and also manages the Navigation switch and LED.
 
 If required, this bootloader and app can be replaced using the following procedure:
 
