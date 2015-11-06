@@ -24,9 +24,14 @@ If required, this bootloader and app can be replaced using the following procedu
 
 
 3. Install the ArdhatCloner sketch on the Arduino.
-4. Restart the Arduino, and the ArdhatCloner sketch will install the latest bootloader and factory default app
+4. Restart the Arduino, and the ArdhatCloner sketch will install the latest bootloader and factory default app from the included data.h
 
-If you want to load a custom app in place of the factory app, use JC wipplers hex2c.tcl to create the data.h file that ArdhatCloner uses.
+
+<div class="note">
+  <h5>Preloading custom apps</h5>
+  <p>If you want to load a custom app in place of the factory app, use <a href="https://github.com/jcw/jeelib/blob/master/examples/Ports/isp_prepare/hex2c.tcl">hex2c.tcl</a> which is also included in the ArdhatCloner repository. This handy utility, from JC Wippler of <a href="http://jeelabs.org/">Jeelabs</a> fame, creates a single data.h file from multiple .hex files, which can be used to replace the default data.h</p>
+</div>
+
 
 
 
