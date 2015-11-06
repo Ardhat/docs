@@ -34,24 +34,40 @@ By default, Raspberry Pi copies its shell and kernel messages to the serial port
 </section>
 
 From the menu, select `Advanced Options`
-
+  
+<br>
 ![image alt text](/media/raspi-config.png)
-
-
+<br>  
 Then select `Serial`
-
+  
+<br>
 ![image alt text](/media/raspi-config-serial.png)
-
+  
+<br>
 and disable shell and kernel messages on serial
-
+  
+<br>
 ![image alt text](/media/raspi-config-serial-no.png)
-
+  
+<br>
 Back at the `Advanced Options` menu you'll also want to enable I2C, so that you can access the {{<ardhat>}} peripherals directly if required
+  
+<br>
+![image alt text](/media/raspi-config-I2C.png)  
 
-![image alt text](/media/raspi-config-I2C.png)
+<br>
+Enable both the `ARM I2C interface` ...  
+<br>  
 
+![image alt text](/media/i2c-en.png)
 
-Now we need to load a few software pre-requisites...
+<br>
+...and the loading of kernel modules  
+<br>  
+
+![image alt text](/media/i2c-kernel.png)
+  
+<br>Now we need to load a few software pre-requisites...  
 
 First make sure you have up-to-date packages installed
 
@@ -99,7 +115,7 @@ Then install some essential packages, including a modified version of avrdude.
   </div>
 </section>
 
-In order that the Arduino IDE works properly with {{<ardhat>}}, it needs perform a reset during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:  
+In order that the Arduino IDE works properly with {{<ardhat>}}, it needs to perform a reset during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:  
 
 <section class="quickstart" >
   <div class="grid">

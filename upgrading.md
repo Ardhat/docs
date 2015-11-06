@@ -18,7 +18,7 @@ The bootloader used in {{<ardhat>}} is a modified version of Optiboot, and is lo
 If required, this bootloader and app can be replaced using the following procedure:
 
 1. Download the ArdhatCloner Sketch from [here](https://github.com/Ardhat/ArdhatCloner)
-2. Using the instructions provided in the Sketch, connect an Arduino or compatible processor to the Ardhat ICSP (you can use some simple jumpers as hown in the image below)
+2. Using the instructions provided in the Sketch, connect an Arduino or compatible processor to the Ardhat ICSP (you can use some simple jumpers as shown in the image below)
 
 <img align="center" src="/media/ArdhatProg.jpg">
 
