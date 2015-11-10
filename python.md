@@ -26,7 +26,7 @@ To install Firmata on the host connect to the Pi using `ssh`, so that you can co
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">
-      <p class="title">Python Firmata</p>
+      <p class="title">Setting up Python Firmata</p>
       <div class="shell">
         <p class="line">
           <span class="path">~</span>
@@ -67,7 +67,7 @@ As an example, the following Python commands will get you up and running reading
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">
-      <p class="title">Python Firmata</p>
+      <p class="title">At the Python Prompt... </p>
       <div class="shell">
         <p class="line">
           <span class="prompt">>>></span>
