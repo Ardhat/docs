@@ -3,7 +3,9 @@ title: Python
 prev: progmodel
 current: python
 next: upgrading
+published: true
 ---
+
 
 ## Inter-processor communication
 
@@ -13,7 +15,7 @@ When the Raspberry Pi is active, it is the master on the  I2C bus, and is respon
 
 However, for accessing regular Arduino-compatible ports such as Analog and PWM a protocol layer is used , or Data Link layer in [OSI parlance](https://en.wikipedia.org/wiki/OSI_model).
 
-This protocol layer is called Firmata, and Applications on the Pi can  communicate with the {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language(using the node.js Firmata library) but other languages such as Python can easily be used.
+This protocol layer is called Firmata, and Applications on the Pi can  communicate with the {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.
 
 ### Using Python Firmata with Ardhat
 
@@ -97,6 +99,3 @@ As an example, the following Python commands will get you up and running reading
     <div class="clear"></div>
   </div>
 </section>
-
-
-
