@@ -29,4 +29,7 @@ Here's a 3D Balance Bot, more commonly called a [BallBot](https://en.wikipedia.o
 
 See this video for more info  
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/f8jxGsg3p0Y" frameborder="0" allowfullscreen></iframe>
+<div class=video-container>
+<iframe height="0" src="https://www.youtube.com/embed/f8jxGsg3p0Y" frameborder="0" allowfullscreen></iframe>
+</div>
+
