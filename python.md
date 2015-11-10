@@ -99,3 +99,6 @@ As an example, the following Python commands will get you up and running reading
     <div class="clear"></div>
   </div>
 </section>
+
+More info on using Python Firmata [here](https://github.com/tino/pyFirmata).
+
