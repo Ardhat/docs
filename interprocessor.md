@@ -42,7 +42,7 @@ To install Firmata on the host connect to the Pi using ssh, so that you can copy
           <span class="command">python</span>
         </p>
         <p class="line">
-          <span class="output"># => You should now have a python prompt</span>
+          <span class="output"># => You should now have a python prompt >>></span>
         </p>
       </div>
     </div>
@@ -50,7 +50,15 @@ To install Firmata on the host connect to the Pi using ssh, so that you can copy
   </div>
 </section>
 
-At the Python prompt we can then instantiate a board, and an reporting iterator, then use it to get values from Ardhat, in this case the values of the A0.
+At the Python prompt we can then instantiate a board, and set and get values on {{<ardhat>}}.
+
+To read the value on an analog pin, you have to first turn on the analog value reporting for that pin. 
+
+Note that 
+- Analogue reads and PWM writes are normalized to a 0 .. 1 range, and not the standard Arduino 0 .. 255 and 0 .. 1023.
+- You really need to start a separate iterator thread to stop old readings overflowing the serial buffer
+
+These commands will get you up and running reading Analog port 0.
 
 <section class="quickstart" >
   <div class="grid">
@@ -66,16 +74,16 @@ At the Python prompt we can then instantiate a board, and an reporting iterator,
           <span class="command">board = Arduino('/dev/ttyS0')</span>
         </p>
         <p class="line">
-          <span class="prompt">>></span>
+          <span class="prompt">>>></span>
           <span class="command">it = util.Iterator(board)</span>
         </p>
         <p class="line">
           <p class="line">
-          <span class="prompt">>></span>
+          <span class="prompt">>>></span>
           <span class="command">it.start</span>
         </p>
           <p class="line">
-          <span class="prompt">>></span>
+          <span class="prompt">>>></span>
           <span class="command">board.analog[0].read()</span>
         </p>
         <p class="line">
