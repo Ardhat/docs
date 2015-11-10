@@ -1,8 +1,8 @@
 ---
-title: Programming model
+title: Programming Model
 prev: installation
 current: progmodel
-next: upgrading
+next: python
 ---
 
 {{<ardhat>}}'s features can be accessed from a compatible host, such as Raspberry Pi, using the [Firmata](https://github.com/firmata/protocol) protocol over serial.
