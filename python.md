@@ -100,5 +100,5 @@ As an example, the following Python commands will get you up and running reading
   </div>
 </section>
 
-More info on using Python Firmata [here](https://github.com/tino/pyFirmata).
+More info on using Python Firmata can be found [here](https://github.com/tino/pyFirmata).
 
