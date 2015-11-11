@@ -11,15 +11,15 @@ published: true
 
 The Raspberry Pi and {{<ardhat>}} can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.
 
-When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.
+When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.
 
-However, for accessing regular Arduino-compatible ports such as Analog and PWM a protocol layer is used , or Data Link layer in [OSI parlance](https://en.wikipedia.org/wiki/OSI_model).
+However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in [OSI parlance](https://en.wikipedia.org/wiki/OSI_model).
 
-This protocol layer is called Firmata, and Applications on the Pi can  communicate with the {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.
+This protocol layer is called Firmata, and allows Applications on the Pi to communicate with {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.
 
 ### Using Python Firmata with Ardhat
 
-Ardhat ships from the factory with Firmata already installed, but follow the instructions in [_Installation_](/docs/installation) to make sure you have turned off kernel serial port use first.
+Ardhat ships from the factory with Firmata already installed, but follow the instructions in [_Installation_](/doc/installation) to make sure you have turned off kernel serial port use first.
 
 To install Firmata on the host connect to the Pi using `ssh`, so that you can copy and paste the following into the terminal:
 
