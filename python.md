@@ -15,7 +15,7 @@ When the Raspberry Pi is active, it is the master on the  I2C bus, and is respon
 
 However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in [OSI parlance](https://en.wikipedia.org/wiki/OSI_model).
 
-This protocol layer is called Firmata, and allows Applications on the Pi to communicate with {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.
+This protocol layer is called [Firmata](https://www.arduino.cc/en/Reference/Firmata), and allows applications on the Pi to communicate with {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.
 
 ### Using Python Firmata with Ardhat
 

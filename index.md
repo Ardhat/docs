@@ -14,7 +14,7 @@ With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and au
 
 This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between. 
 
-Find an error, or want to add something? See [this article] (/doc/contributing) on how to contribute for more info.
+Find an error, or want to add something? See [this article](/doc/contributing) on how to contribute for more info.
 
 ## Helpful Hints
 

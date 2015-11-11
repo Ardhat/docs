@@ -12,12 +12,12 @@ next: configuration
 
 On a single Raspberry Pi standard [HAT](https://github.com/raspberrypi/hats),  {{<ardhat>}} integrates not only an [Arduino Uno ](http://arduino.cc/en/Main/arduinoBoardUno)compatible real-time hardware subsystem,  but also a complete power management solution, a full suite of environmental sensors, and an optional long-range wireless mesh network node.
 
-
 {{<ardhat>}} supports an open,  state-of-the-art software framework that securely and flexibly allows Sensors and Actuators to communicate both amongst themselves, and with other  Sensor Network devices and products, on or off the Internet.
 
 Compatible with all current Raspberry Pi models, {{<ardhat>}} adds the environmental  protection and awareness, real-time performance, and  low-power operation that a real world system needs.
 
-### {{<ardhat>}} -Features
+Use the table below and menu on the right to find out more details about all of {{<ardhat>}}'s special features.
+
 
 * * *
 
@@ -44,6 +44,4 @@ Inter-processor communication over Serial and Hi-Speed 400kHz I2C bus | *Rapid a
 On board peripherals are accessible by both Arduino and Raspberry Pi | *When Raspberry Pi is in halt mode, Ardhat can check peripherals and wake up Raspberry Pi  e.g. RTC, IMU*
 Raspberry Pi Hat standard compliant design | *Fully compliant, with  ID EEPROM ,40 pin header compatible with Raspberry Pi model A+ , B+ and B V2*
 
-<br/>
 
-Note: Ardhat does not include peripherals that are available off-the-shelf, such as WiFi,  Bluetooth, GPS, storage, camera etc. as these are cheaper and easier to install using the Raspberry Pi USB port(s).  
