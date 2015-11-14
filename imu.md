@@ -24,12 +24,20 @@ The IMU is connected to the I2C bus. It is mounted at {{<ardhat>}}'s  geographic
 
  The MPU9250 is also compatible with the popular [RTIMUlib](https://github.com/richards-tech/RTIMULib-Arduino).
  
-Here's a 3D Balance Bot, more commonly called a [BallBot](https://en.wikipedia.org/wiki/Ballbot), created with Lego Mindstorms and {{<ardhat>}},  an NXT motor shield and a 3-cell LiPo.
+ {{<ardhat>}}'s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a [BallBot](https://en.wikipedia.org/wiki/Ballbot).  This concept was originally rendered in Mindstorms by  [Takashi Chikamasa](http://lejos-osek.sourceforge.net/),  using a Lejos, a custom Real-Time kernel for Mindstorms.
+
+ <div class=video-container>
+<iframe src="https://www.youtube.com/embed/f8jxGsg3p0Y" frameborder="0" allowfullscreen></iframe>
+</div>
+
+ We've updated the concept to Mindstorms EV3 using {{<ardhat>}}, a motor shield and a 3-cell LiPo,
 
  ![image alt text](/media/balbot.jpg)
 
-See this video for more info  
+ More details, including Lego Digital designer build instructions and code are in the {{<ardhat>}} Github repository.
 
-<div class=video-container>
-<iframe src="https://www.youtube.com/embed/f8jxGsg3p0Y" frameborder="0" allowfullscreen></iframe>
-</div>
+![image alt text](/media/balbot.jpg)
+
+
+
+
