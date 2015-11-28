@@ -27,7 +27,7 @@ The IMU is connected to the I2C bus. It is mounted at {{<ardhat>}}'s  geographic
 #### IMU and Drones
  {{<ardhat>}}'s MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi, as the basis of machine vision based drones.
 
- The  {{<ardhat>}} Github repo has a version of the MultiWii library extended with [support for the MPU9250](https://github.com/Ardhat/multiwii-firmware). This allows you to use  apps such as [EZGUI](http://ez-gui.com/) to monitor and control your drone  
+ The  {{<ardhat>}} Github repo has a version of the MultiWii library extended with [support for the MPU9250](https://github.com/Ardhat/ArdhatFlight). This allows you to use  apps such as [EZGUI](http://ez-gui.com/) to monitor and control your drone  
   
   ![image alt text](/media/ezgui.jpg)  
   
