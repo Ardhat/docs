@@ -8,14 +8,14 @@ published: true
 
 
 
-### (Inertial Measurement Unit)  
+### Inertial Measurement Unit  
 
 ![image alt text](/media/mpu9250.jpg)
 
 The IMU is connected to the I2C bus. It is mounted at {{<ardhat>}}'s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides
 
-* 3-axis accelerometer
 * 3-axis gyroscope
+* 3-axis accelerometer
 * 3-axis magnetometer (compass) 
 
  During normal operation, these devices are typically monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by {{<ardhat>}} and used to wakeup the Raspberry Pi. 
@@ -24,6 +24,14 @@ The IMU is connected to the I2C bus. It is mounted at {{<ardhat>}}'s  geographic
 
  The MPU9250 is also compatible with the popular [RTIMUlib](https://github.com/richards-tech/RTIMULib-Arduino).
  
+#### IMU and Drones
+ {{<ardhat>}}'s MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi, as the basis of machine vision based drones.
+
+ The  {{<ardhat>}} Github repo has a version of the MultiWii library extended with [support for the MPU9250](https://github.com/Ardhat/multiwii-firmware). This allows you to use  apps such as [EZGUI](http://ez-gui.com/) to monitor and control your drone  
+  
+  ![image alt text](/media/ezgui.jpg)  
+  
+#### IMU and Robotics  
  {{<ardhat>}}'s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a [BallBot](https://en.wikipedia.org/wiki/Ballbot).  This concept was originally rendered in Mindstorms by  [Takashi Chikamasa](http://lejos-osek.sourceforge.net/),  using a Lejos, a custom Real-Time kernel for Mindstorms.
 
  <div class=video-container>
@@ -36,7 +44,7 @@ The IMU is connected to the I2C bus. It is mounted at {{<ardhat>}}'s  geographic
 
  More details, including Lego Digital designer build instructions and code are in the {{<ardhat>}} Github repository.
 
-![image alt text](/media/balbot.jpg)
+
 
 
 

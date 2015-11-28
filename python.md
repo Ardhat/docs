@@ -21,7 +21,7 @@ This protocol layer is called [Firmata](https://www.arduino.cc/en/Reference/Firm
 
 Ardhat ships from the factory with Firmata already installed, but follow the instructions in [_Installation_](/doc/installation) to make sure you have turned off kernel serial port use first.
 
-To install Firmata on the host connect to the Pi using `ssh`, so that you can copy and paste the following into the terminal:
+To install Firmata on the host, connect to the Pi using `ssh`, so that you can copy and paste the following into the terminal:
 
 <section class="quickstart" >
   <div class="grid">
