@@ -56,6 +56,6 @@ Also, double check you have set the right SPI SS and Interrupt lines. In the cas
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 ~~~
 
-Then load up the `RF69_server.pde` sketch on the 'gateway' {{<ardhat>}}, and the `RF69_server.pde` sketch on the 'node'. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.
+Then load up the `RF69_server.pde` sketch on the 'gateway' {{<ardhat>}}, and the `RF69_client.pde` sketch on the 'node'. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.
 
 Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.
