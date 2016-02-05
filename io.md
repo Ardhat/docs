@@ -8,7 +8,7 @@ published: true
 
 
 
-{{<ardhat>}} has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the {{<ardhat>}} environment as detailed below:  
+{{<ardhat>}} has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of the pins have a special usage in the {{<ardhat>}} environment as detailed below:  
 
  **Raspberry Pi GPIO** | Usage
 --- | ---
