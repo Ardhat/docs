@@ -21,7 +21,7 @@ Some versions of {{<ardhat>}} do not come with headers pre installed, which give
 
 #### Writing to HAT eeprom
 
-By default {{<ardhat>}} this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.
+By default on the {{<ardhat>}} this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.
 
 
 #### Radio antenna
