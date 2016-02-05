@@ -107,7 +107,7 @@ Then install some essential packages, including a modified version of avrdude.
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">git clone git clone git://github.com/Ardhat/avrdude-rpi.git</span>
+          <span class="command">git clone git://github.com/Ardhat/avrdude-rpi.git</span>
         </p>
       </div>
     </div>
@@ -115,7 +115,7 @@ Then install some essential packages, including a modified version of avrdude.
   </div>
 </section>
 
-In order that the Arduino IDE works properly with {{<ardhat>}}, it needs to perform a reset during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:  
+In order for the Arduino IDE to work properly with {{<ardhat>}}, it needs to perform a reset during code upload. It does this using the modified avrdude we just cloned, so enter the following commands:  
 
 <section class="quickstart" >
   <div class="grid">
