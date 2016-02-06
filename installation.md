@@ -4,7 +4,7 @@ weight: 30
 toc: true
 prev: expansion
 current: installation
-next: progmodel
+next: power
 ---
 
 
@@ -34,24 +34,24 @@ By default, Raspberry Pi copies its shell and kernel messages to the serial port
 </section>
 
 From the menu, select `Advanced Options`
-  
+
 <br>
 ![image alt text](/media/raspi-config.png)
 <br>  
 Then select `Serial`
-  
+
 <br>
 ![image alt text](/media/raspi-config-serial.png)
-  
+
 <br>
 and disable shell and kernel messages on serial
-  
+
 <br>
 ![image alt text](/media/raspi-config-serial-no.png)
-  
+
 <br>
 Back at the `Advanced Options` menu you'll also want to enable I2C, so that you can access the {{<ardhat>}} peripherals directly if required
-  
+
 <br>
 ![image alt text](/media/raspi-config-I2C.png)  
 
@@ -66,7 +66,7 @@ Enable both the `ARM I2C interface` ...
 <br>  
 
 ![image alt text](/media/i2c-kernel.png)
-  
+
 <br>Now we need to load a few software pre-requisites...  
 
 First make sure you have up-to-date packages installed
@@ -156,7 +156,7 @@ In order for the Arduino IDE to work properly with {{<ardhat>}}, it needs to per
 </section>
 
 Start the Arduino IDE...
-  
+
 
 
 

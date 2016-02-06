@@ -2,7 +2,7 @@
 title: Expansion
 prev: battery
 current: expansion
-next: installation
+next: progmodel
 ---
 
 ### Arduino Compatibility

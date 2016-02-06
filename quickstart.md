@@ -4,7 +4,7 @@ weight: 30
 toc: true
 prev: configuration
 current: quickstart
-next: power
+next: installation
 ---
 
 Before connecting  to a host system such as Raspberry Pi, be sure to checkout the hardware setup instructions [here](/doc/configuration).
@@ -54,6 +54,3 @@ If you want to program {{<ardhat>}} directly from Raspberry Pi, there are full i
     <div class="clear"></div>
   </div>
 </section>
-
-
-

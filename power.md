@@ -26,13 +26,10 @@ This input is protected against polarity reversals and over-current and will acc
 Also note that power from the Raspberry Pi will always be supplied to Ardhat even if this switch is off.</p>
 </div>
 
-  
-{{<ardhat>}} also support solar charging using the 0.1" header next to the ICSP header. 
+
+{{<ardhat>}} also support solar charging using the 0.1" header next to the ICSP header.
 
 <div class="note warning">
   <h5>NB {{<ardhat>}} requires a 6V solar panel</h5>
   <p>Also please ensure the polarity is correct, as this input is not protected against polarity reversal. Ground is the pin nearest the edge of the board</p>
 </div>
-
-
-
