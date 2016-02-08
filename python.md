@@ -54,15 +54,54 @@ To install Firmata on the host, connect to the Pi using `ssh`, so that you can c
 
 At the Python prompt we can then instantiate a board, and set and get values on {{<ardhat>}}.
 
-To read the value on an analog pin, you have to first turn on the analog value reporting for that pin. 
+To read the value on an analog pin, you have to first turn on the analog value reporting for that pin.
 
-Note that 
+Note that
 
 - Analogue reads and PWM writes are normalized to a 0 .. 1 range, and not the standard Arduino 0 .. 255 and 0 .. 1023.
 
 - You should start a separate iterator thread to stop unread value reports clogging up the Firmata channel
 
-As an example, the following Python commands will get you up and running reading Analog port 0.
+
+As an example, the following Python commands let you perform a simple test of port D2.
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">At the Python Prompt... </p>
+      <div class="shell">
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">from pyfirmata import Arduino, util</span>
+        </p>        
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">board = Arduino('/dev/ttyS0')</span>
+        </p>
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">board.digital[2].write(1)</span>
+        </p>
+        <p class="line">
+          <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">board.digital[2].read()</span>
+        </p>
+        <p class="line">
+          <span class="command">1</span>
+        </p>
+        <p class="line">
+        <p class="line">
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+
+
+... or use this example for reading Analog port 0.
 
 <section class="quickstart" >
   <div class="grid">
@@ -86,9 +125,16 @@ As an example, the following Python commands will get you up and running reading
           <span class="prompt">>>></span>
           <span class="command">it.start</span>
         </p>
-          <p class="line">
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command"> board.analog[0].enable_reporting()</span>
+        </p>
+        <p class="line">
           <span class="prompt">>>></span>
           <span class="command">board.analog[0].read()</span>
+        </p>
+        <p class="line">
+          <span class="command">0.2727</span>
         </p>
         <p class="line">
         <p class="line">
@@ -100,5 +146,7 @@ As an example, the following Python commands will get you up and running reading
   </div>
 </section>
 
-More info on using Python Firmata can be found [here](https://github.com/tino/pyFirmata).
 
+
+
+More info on using Python Firmata can be found [here](https://github.com/tino/pyFirmata).

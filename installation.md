@@ -148,9 +148,6 @@ In order for the Arduino IDE to work properly with {{<ardhat>}}, it needs to per
           <span class="prompt">$</span>
           <span class="command">sudo ln -s /usr/bin/avrdude-autoreset /usr/bin/avrdude</span>
         </p>
-        <p class="line">
-          <span class="output"># => Now open the Arduino IDE and start programming Ardhat!</span>
-        </p>
       </div>
     </div>
     <div class="clear"></div>
@@ -173,8 +170,13 @@ Finally, so that the Arduino IDE can 'see' the {{<ardhat>}} serial port, we need
         </p>        
         <p class="line">
           <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">echo KERNEL==”ttyAMA0″,SYMLINK+=”ttyS0″ GROUP=”dialout”,MODE:=0666 > /etc/udev/rules.d/ 80-ardhat.rules</span>
+          <span class="prompt">#</span>
+          <span class="command">echo 'KERNEL=="ttyAMA0", SYMLINK+="ttyS0",GROUP="dialout",MODE:=0666' >  /etc/udev/rules.d/80-ardhat.rules</span>
+        </p>
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">#</span>
+          <span class="command">udevadm trigger</span>
         </p>
       </div>
     </div>
@@ -183,7 +185,7 @@ Finally, so that the Arduino IDE can 'see' the {{<ardhat>}} serial port, we need
 </section>
 
 
-After a reboot, start the Arduino IDE...
+Start the Arduino IDE...
 
 
 
