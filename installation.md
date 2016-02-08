@@ -115,6 +115,8 @@ Then install some essential packages, including a modified version of avrdude.
   </div>
 </section>
 
+
+
 In order for the Arduino IDE to work properly with {{<ardhat>}}, it needs to perform a reset during code upload. It does this using the modified avrdude we just cloned, so enter the following commands:  
 
 <section class="quickstart" >
@@ -155,7 +157,33 @@ In order for the Arduino IDE to work properly with {{<ardhat>}}, it needs to per
   </div>
 </section>
 
-Start the Arduino IDE...
+
+Finally, so that the Arduino IDE can 'see' the {{<ardhat>}} serial port, we need to create a symlink between the Raspberry Pi ttyAMA0 port and ttyS0.
+
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">Create a link to ttyS0  </p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo -i</span>
+        </p>        
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">echo KERNEL==”ttyAMA0″,SYMLINK+=”ttyS0″ GROUP=”dialout”,MODE:=0666 > /etc/udev/rules.d/ 80-ardhat.rules</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+
+After a reboot, start the Arduino IDE...
 
 
 
