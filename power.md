@@ -13,7 +13,7 @@ next: leds
 
 The wide input voltage range mean that just about any laptop power supply that physically fits can be used.
 
-Adapters are available to connect to bare wires,for example to use in cars and R<img align="right" style="width:200px;height:200px" src="/media/005AX.jpg">Vs.
+Adapters are available to connect to bare wires,for example to use in cars and R<img align="right" style="width:200px;height:200px; padding-left: 10px; padding-top: 5px" src="/media/005AX.jpg">Vs.
 
 
 This input is protected against polarity reversals and over-current and will accept any voltage from 8-28V. The polarity protected voltage from this connector is presented to the Arduino shield header for use by shields. {{<ardhat>}} integrates a 5v@ 3A switching regulator driven by this external supply , for use by peripherals, such as small servo motors or ESCs. Note that the maximum current drawn by shields from the 5V rail must be less than 2.5A.  

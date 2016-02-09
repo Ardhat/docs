@@ -102,7 +102,7 @@ Then install some essential packages, including a modified version of avrdude.
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">sudo aptitude install git arduino</span>
+          <span class="command">sudo aptitude install git arduino i2c-tools</span>
         </p>        
         <p class="line">
           <span class="path">~</span>

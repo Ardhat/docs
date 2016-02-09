@@ -2,26 +2,26 @@
 title: Python
 prev: progmodel
 current: python
-next: upgrading
+next: js
 published: true
 ---
 
 
-## Inter-processor communication
 
-The Raspberry Pi and {{<ardhat>}} can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.
+{{<ardhat>}}'s features can be accessed from a compatible host, such as Raspberry Pi, using the [Firmata](https://github.com/firmata/protocol) protocol over serial (for more information see [Programming Model](/doc/progmodel/)).
 
-When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.
+Firmata provides a standardized mechanism to exchange information between a real-time processor such as {{<ardhat>}} and a host, useable by many programming languages.
 
-However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in [OSI parlance](https://en.wikipedia.org/wiki/OSI_model).
-
-This protocol layer is called [Firmata](https://www.arduino.cc/en/Reference/Firmata), and allows applications on the Pi to communicate with {{<ardhat>}} provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.
 
 ### Using Python Firmata with Ardhat
 
-Ardhat ships from the factory with Firmata already installed, but follow the instructions in [_Installation_](/doc/installation) to make sure you have turned off kernel serial port use first.
+{{<ardhat>}} ships from the factory with Firmata already installed (but follow the instructions in [_Installation_](/doc/installation) to make sure you have turned off kernel serial port use before proceeding). We need to install a couple of extra packages to allow the host to communicate over Firmata using Python.
 
-To install Firmata on the host, connect to the Pi using `ssh`, so that you can copy and paste the following into the terminal:
+<div class="note info">
+  <p>To enter these commands more easily, connect to the Pi using `ssh`, so that you can copy and paste them into the terminal.</p>
+</div>
+
+
 
 <section class="quickstart" >
   <div class="grid">
