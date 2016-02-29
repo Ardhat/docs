@@ -24,7 +24,7 @@ In this example we are going to use
 
 ### Using Node Firmata with Ardhat
 
-Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.
+Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js (v4.x) together with npm.
 
 To do this we must uninstall the built-in version and re-install using the instructions below.  
 
@@ -157,7 +157,8 @@ Now we can proceed to re-install Node.js following the instructions below depend
 Now we are ready to run our javascript program on node.js driving Ardhat.
 
 
-Create a file with the following contents:
+Create a file with the following contents:  
+&nbsp;  
 
 ~~~c
 var five = require("johnny-five"),
@@ -173,6 +174,8 @@ board.on("ready", function() {
 
 ~~~
 
+
+&nbsp;  
 
 Save it as test.js, and run it with
 
@@ -206,7 +209,7 @@ Save it as test.js, and run it with
 
 Ardhat's activity LED will blink quickly.
 
-"Repl Initialized" means that the Johnny-Five "Read Evaluate Print Loop" is running, which means that you have a node prompt at which you can enter [node commands](http://johnny-five.io/examples/repl/).
+"Repl Initialized" indicates that the Johnny-Five "Read Evaluate Print Loop" is running, which means that you have a node prompt at which you can enter [node commands](http://johnny-five.io/examples/repl/).
 
 For a more in-depth example, see this [article](https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/) which shows how to build a simple [home-monitoring system](https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring), similar to commercial products like Nest and Hive.
 
@@ -219,4 +222,4 @@ For a more in-depth example, see this [article](https://www.smashingmagazine.com
 <a href="http://nodered.org/"><img align="right" style="height:200px; padding-left: 10px; padding-top: 5px" src="/media/node-red-screenshot-sm.png" alt="NodeRED" title="NodeRED"></a>
 An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.
 
-Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide of range nodes in a 'palette' of node modules. Flows can then be deployed in a single-click. For more info see the [Node-Red website](http://nodered.org/) .
+Node-RED provides a browser-based flow editor that makes it easy to wire together flows using a collection of 'Nodes' in a 'palette'. Flows can then be deployed in a single-click. For more info see the [Node-Red website](http://nodered.org/) , or [this excellent tutorial](https://learn.adafruit.com/raspberry-pi-hosting-node-red/what-is-node-red) on Adafruit.

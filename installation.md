@@ -141,7 +141,7 @@ In order for the Arduino IDE to work properly with {{<ardhat>}}, it needs to per
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">sudo mv /usr/bin/avrdude /usr/bin/avrdude-orig</span>
+          <span class="command">sudo mv /usr/bin/avrdude /usr/bin/avrdude-original</span>
         </p>
         <p class="line">
           <span class="path">~</span>
