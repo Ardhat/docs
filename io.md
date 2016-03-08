@@ -18,9 +18,9 @@ published: true
 **GPIO 15** | Serial TXD – used for programming the Arduino with GPIO 22
 **GPIO 18** | PiPWM – connected to a 3V-5V level shifter to drive e.g. WS2811 LED strips (see **SPARE** below)
 **GPIO 22** | Arduino ‘Reset’ line – used for programming with serial port
-**ID_SC** | HAT EEPROM Clock – used for read-writing the ArdHAT EEPROM
-**ID_SD** | HAT EEPROM Data – used for read-writing the ArdHAT EEPROM
-**5V** | Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow from the Raspberry Pi to Ardhat  
+**ID_SC** | HAT EEPROM Clock – used for read/writing the ArdHAT EEPROM
+**ID_SD** | HAT EEPROM Data – used for read/writing the ArdHAT EEPROM
+**5V** | Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow _from_ the Raspberry Pi _to_ Ardhat  
 
 <br>
 The table below shows the shield I/O usage by {{<ardhat>}}. Unlike a standard Arduino, the processor used has 2 extra analog I/O , A6 and A7, which are used for battery and supply monitoring, and which are connected to the pins normally used by A4 and A5, in case you want to access these signals in your applications.
