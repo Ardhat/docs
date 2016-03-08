@@ -4,7 +4,7 @@ prev: navi
 current: rtc
 next: imu
 ---
-The realtime clock is provided by an NXP PCF8563, which is supported directly by the Raspberry Pi Linux distribution for use as a hardware clock. This is battery backed by the on board LiPo cell. The RTC time can be set manually or automatically updated  from an NTP server  when this is available. When the Raspberry Pi is halted, {{<ardhat>}} can access the RTC to in order to wake up the Raspberry Pi at a predetermined time. 
+The realtime clock is provided by an NXP PCF8563, which is supported directly by the Raspberry Pi Linux distribution for use as a hardware clock. This is battery backed by the on board LiPo cell. The RTC time can be set manually or automatically updated  from an NTP server  when this is available. When the Raspberry Pi is halted, {{<ardhat>}} can access the RTC to in order to wake up the Raspberry Pi at a predetermined time.
 
 The PCF8563 features, taken from the [product datasheet](http://www.nxp.com/documents/data_sheet/PCF8563.pdf), are:
 
@@ -77,19 +77,10 @@ exit 0<br>
 Save, then reboot with `sudo reboot`
 
 
-Now you can check the results, first with `i2detect -y 1`, which shows that the i2c driver loaded (and that in this case we have 3 i2c devices present)
+Now you can check the results, first with `i2cdetect -y 1`, which shows that the i2c driver loaded (and that in this case we have 3 i2c devices present)
 
 <img align="center" src="/media/i2cdetect.png">
 
 Then with `sudo hwclock --rtc /dev/rtc0 -r --debug`
 
 <img align="center" src="/media/rtc-check.png">
-
-
-
-
-
-
-
-
-
