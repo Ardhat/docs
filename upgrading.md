@@ -13,7 +13,7 @@ If using Ardhat on a Raspberry Pi, see [this guide](https://www.raspberrypi.org/
 
 ## Updating the bootloader
 
-The bootloader used in {{<ardhat>}} is a modified version of Optiboot, and is loaded at the factory together with a default [Sketch](https://github.com/Ardhat/ArdhatFirmata)  that runs [Firmata](https://github.com/firmata/protocol) and also manages the Navigation switch and LED.
+The bootloader used in {{<ardhat>}} is a modified version of Optiboot, and is loaded at the factory together with a default [Sketch](https://github.com/Ardhat/ArdhatFirmware)  that runs [Firmata](https://github.com/firmata/protocol) and also manages the Navigation switch and LED.
 
 If required, this bootloader and app can be replaced using the following procedure:
 
@@ -31,7 +31,3 @@ If required, this bootloader and app can be replaced using the following procedu
   <h5>Preloading custom apps</h5>
   <p>If you want to load a custom app in place of the factory app, use <a href="https://github.com/jcw/jeelib/blob/master/examples/Ports/isp_prepare/hex2c.tcl">hex2c.tcl</a> which is also included in the ArdhatCloner repository. This handy utility, from JC Wippler of <a href="http://jeelabs.org/">Jeelabs</a> fame, creates a single data.h file from multiple .hex files, which can be used to replace the default data.h</p>
 </div>
-
-
-
-
